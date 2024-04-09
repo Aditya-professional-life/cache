@@ -7,6 +7,7 @@ class Solution:
         return arr
     
     def left_rotate(self, arr, d):
+
         arr[:d] = self.reverse(arr, 0, d - 1)
         arr[d:] = self.reverse(arr, d, len(arr) - 1)
         arr[:] = self.reverse(arr, 0, len(arr) - 1)  # Reversing the entire array
@@ -17,3 +18,5 @@ arr = [1, 2, 3, 4, 5, 6]
 d = 3
 result = s1.left_rotate(arr, d)
 print(result)
+
+
