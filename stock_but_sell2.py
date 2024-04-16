@@ -16,7 +16,7 @@ def stockBuySell(price, n):
         if i == n - 1:
             break
 
-        # Store the index of minima
+        # Store the index of minima-
         buy = i
         i += 1
 
